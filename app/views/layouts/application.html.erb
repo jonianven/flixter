@@ -58,9 +58,44 @@
 <br class="clr" />
 <div id="footer">
   <div class="container">
-    <b>Teachers</b>
+    <div class="col-xs-12 col-sm-3">
+      <b>Teachers</b>
+      <br />
+      <%= link_to 'Teach a course', new_instructor_course_path %>
+      <br />
+      <%= link_to 'My Dashboard', dashboard_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>About</b>
+      <br />
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', '#' %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>Contact</b>
+      <br />
+      jonianven@gmail.com
+      <br />
+      1169 Pipe Dream Ct
+      <br />
+      San Jose, CA 95122
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+    <b>Social</b>
     <br />
-    <%= link_to 'Teach a course', new_instructor_course_path %>
+    <%= link_to 'http://www.github.com/jonianven' do %>
+      <%= image_tag 'ghub.png', class: 'social-button' %>
+    <% end %>
+    <%= link_to 'http://www.linkedin.com/in/jonamir' do %>
+      <%= image_tag 'linkedin.png', class: 'social-button' %>
+    <% end %>
+    <%= link_to 'http://www.twitter.com/jonianven' do %>
+      <%= image_tag 'twitter.png', class: 'social-button' %>
+    <% end %>
+    </div>
   </div>
 </div>
 
